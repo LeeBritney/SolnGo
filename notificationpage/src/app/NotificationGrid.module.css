@@ -1,0 +1,13 @@
+/* NotificationGrid.module.css */
+.notificationGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .notificationItem {
+    border-radius: 0.5em; /* Adjust this value as needed */
+    background: #e0e0e0;
+    box-shadow:  46px 46px 92px #707070,
+                 -46px -46px 92px #ffffff;
+  }
+  
