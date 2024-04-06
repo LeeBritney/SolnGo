@@ -1,0 +1,53 @@
+.header {
+    background-color: #2d2d2d; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 1rem 2rem; /* Add some padding */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Vertically align content */
+  }
+  
+  .logo {
+    margin-right: 1rem; /* Increase spacing after logo */
+    width: 100px; /* Increase logo width */
+    height: 100px; /* Increase logo height */
+  }
+  
+  .websiteName {
+    font-size: 1.5rem; /* Increase text size */
+    font-weight: bold;
+    margin-right: 1rem; /* Add some margin to the right */
+  }
+  
+  .searchBar {
+    flex: 0.5; /* Search bar takes remaining space */
+    margin: 1rem; /* Add some margin to the right */
+    background-color: #2e3a4f; /* Darker background for search bar */
+    color: #000; /* Light text color for search bar */
+  }
+  
+  .searchInput {
+    width: 100%; /* Adjust search input width */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    font-size: 1rem; /* Increase font size */
+    border: 1px solid #4f5b6c; /* Border color for dark theme */
+    border-radius: 4px; /* Add border radius */
+  }
+  
+  .profileButton,
+  .menuButton {
+    background: none; /* Remove default button styles */
+    border: none;
+    cursor: pointer; /* Indicate clickable elements */
+    font-size: 1.2rem; /* Increase font size */
+    padding: 0.5rem 1rem; /* Add padding */
+    color: #fff; /* Light text color for buttons */
+  }
+  
+  .menuButton {
+    /* increase size*/
+    font-size: 3rem;
+  }

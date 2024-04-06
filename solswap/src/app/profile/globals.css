@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100px; /* Set a fixed height for the header */
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-color: #444;
+  width: 100% ;
+}
+
+nav ol {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ol li {
+  display: inline;
+  align-items: center;
+  margin: 30px;
+}
+
+nav ol li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ol li a:hover {
+  text-decoration: underline;
+}
+
+nav ol li image{
+  align-items: center;
+}
+
+
+.list {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures no wrapping */
+}
