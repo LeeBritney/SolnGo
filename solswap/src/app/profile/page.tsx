@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from 'next'
 import React from 'react';
-import Header from '/solswap-app/solswap/src/components/header';
-import Footer from "/solswap-app/solswap/src/components/footer";
+import Header from '../../components/header';
+import Footer from "../../components/footer";
 
 export const metadata: Metadata = {
   title: 'Your Profile',
@@ -72,7 +72,7 @@ export default function Home() {
             <p className="container mx-auto px-4 py-2 border rounded-md border-black ">Security</p>
             <p className="container mx-auto px-4 py-2 border rounded-md border-black ">Advanced Settings</p>
             <p className="container mx-auto px-4 py-2 border rounded-md border-black ">Change Password</p>
-            <Link href="/signup">
+            <Link href="/">
                 <p className="container mx-auto px-4 py-2 border rounded-md border-black ">Log Out </p>
             </Link>
           </div>

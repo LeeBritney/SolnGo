@@ -1,40 +1,89 @@
-import React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
+'use client'
+import React, { useState } from 'react';
+import './signuppage.css';
+import rightImage from '../../public/logo.png'; // Import your image file
 import Link from 'next/link';
-import WalletBalance from '../components/WalletBalance';
-import "./globals.css";
 
+const SignUp = () => {
+  const [formData, setFormData] = useState({ username: '', password: '' });
+  const [errors, setErrors] = useState({ username: '', password: '' });
+  const [accountType, setAccountType] = useState('individual'); // Default to individual account type
 
-const HomePage: React.FC = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const { username, password } = formData;
+    let isValid = true;
+
+    if (username.trim() === '') {
+      setErrors({ ...errors, username: 'Username is required.' });
+      isValid = false;
+    } else {
+      setErrors({ ...errors, username: '' });
+    }
+
+    if (password.trim() === '') {
+      setErrors({ ...errors, password: 'Password is required.' });
+      isValid = false;
+    } else {
+      setErrors({ ...errors, password: '' });
+    }
+
+  };
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleAccountTypeChange = (event) => {
+    setAccountType(event.target.value);
+  };
 
   return (
-
-    <div className = "container mx-auto px-4">
-      <Header />
-      <main>
-      <div className = 'md:flex justify-around mt-20'>
-        <div className = "container-sm text-justify border-2 border-gray-300 rounded-lg p-4 px-10">
-          <h1 className = "walletTitle">My Wallet</h1>
-          <WalletBalance />
-          <Link href = "/reload">
-            <button className = "reload-button">Reload +</button>
-          </Link>
-        </div>
+    <div className="center-content">
+      <div className="container">
+        <h3>Sign Up</h3>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="username">Username: </label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
+              onChange={handleInputChange}
+            />
+            {errors.username && <div className="error">{errors.username}</div>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="password">Password: </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+            />
+            {errors.password && <div className="error">{errors.password}</div>}
+          </div>
+          <div className="form-group">
+            <label htmlFor="accountType">Account Type: </label>
+            <select
+              id="accountType"
+              name="accountType"
+              value={accountType}
+              onChange={handleAccountTypeChange}
+            >
+              <option value="individual">Individual</option>
+              <option value="business">Business</option>
+            </select>
+          </div>
+          <button type="submit"><Link href= "/home">Sign Up</Link></button>
+        </form>
       </div>
-      <div className ="button-container">
-        <Link href = "/qr">
-          <button className = "button">Scan QR</button>
-        </Link>
-        <Link href = "/split">
-          <button className = "button">Split Bill</button>
-        </Link>
-      </div>
-      </main>
-      <Footer /> 
+      <img src={rightImage.src} alt="Right Image" className="right-image" />
     </div>
-
   );
 };
 
-export default HomePage;
+export default SignUp;

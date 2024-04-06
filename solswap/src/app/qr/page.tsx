@@ -72,7 +72,7 @@ export default function Home() {
         <div style={frameStyles}></div>
       </div>
       <button style={scanStyles}>Scan from gallery</button>
-      <div style={backButtonStyles} ><Link href= "/">Back to Home</Link></div>
+      <div style={backButtonStyles} ><Link href= "/home">Back to Home</Link></div>
     </main>
   );
 }

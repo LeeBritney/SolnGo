@@ -1,7 +1,7 @@
 
 import React from "react";
-import Header from "/solswap-app/solswap/src/components/header";
-import Footer from "/solswap-app/solswap/src/components/footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 import styles from "./TransactionHistoryGrid.module.css";
 
 interface Transaction {

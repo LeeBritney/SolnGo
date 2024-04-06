@@ -35,7 +35,7 @@ label {
 
 input,
 select {
-  background-color: #000000; /* Set a light background color for input fields */
+  background-color: grey; /* Set a light background color for input fields */
 }
 
 button {

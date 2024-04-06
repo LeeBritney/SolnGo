@@ -116,7 +116,7 @@ const SplitBill: React.FC = () => {
           Split Bill
         </button>
       </form>
-      <div style={backButtonStyles} ><Link href= "/">Back to Home</Link></div>
+      <div style={backButtonStyles} ><Link href= "/home">Back to Home</Link></div>
     </div>
   );
 };

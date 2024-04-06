@@ -7,14 +7,14 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`${styles.container} mx-auto px-4 flex justify-between items-center py-4`}>
         {/* Logo Placeholder */}
-        <Link href="/">
+        <Link href="/home">
           <div className={styles.logo}>
             <img src="/logo.png" alt="Logo" width="100" height="100" />
           </div>
         </Link>
 
         {/* Website Name */}
-        <Link href="/">
+        <Link href="/home">
           <h1 className={styles.websiteName}>Sol&Go</h1>
         </Link>
 
@@ -38,7 +38,7 @@ export default function Header() {
         {/* Burger Menu (Placeholder) */}
         <Link href="/transaction">
           <h2 className = "menuButton">
-            aa
+            Transaction History
           </h2>
         </Link>
       </div>

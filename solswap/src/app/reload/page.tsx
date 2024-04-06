@@ -97,7 +97,7 @@ const PaymentPage: React.FC = () => {
           </div>
         </section>
         {/* end: Payment */}
-        <div style={backButtonStyles} ><Link href= "/">Back to Home</Link></div>
+        <div style={backButtonStyles} ><Link href= "/home">Back to Home</Link></div>
       </body>
     </html>
   );
