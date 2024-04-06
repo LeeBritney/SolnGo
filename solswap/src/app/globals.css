@@ -14,6 +14,34 @@
     --background-start-rgb: 45, 45, 45;
     --background-end-rgb: 45, 45, 45;
   }
+
+  .button {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 5rem;
+  }
+
+  .button:hover{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+  }
+
+  .reload-button{
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 0rem;
+  }
+
+  .reload-button:hover{
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+  }
 }
 
 body {
@@ -26,8 +54,32 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.walletTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.websiteName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
   }
 } 

@@ -47,9 +47,7 @@
     color: #fff; /* Light text color for buttons */
   }
   
-  .menuButton svg {
-    fill: currentColor; /* Inherit color from parent button */
-    width: 20px; /* Increase icon size */
-    height: 20px; /* Increase icon size */
+  .menuButton {
+    /* increase size*/
+    font-size: 3rem;
   }
-  

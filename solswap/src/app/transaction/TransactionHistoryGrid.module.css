@@ -1,0 +1,27 @@
+/* TransactionHistoryGrid.module.css */
+.transactionItem {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: margin 0.3s;
+  }
+  
+  .transactionDetails {
+    display: none;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-top: 1px solid #ccc;
+  }
+  
+  .transactionDetails p {
+    color: black;
+  }
+  
+  .transactionItem:target .transactionDetails {
+    display: block;
+  }
+  
+  .transactionItem:target {
+    margin-bottom: 100px; /* Adjust as needed */
+  }
+  

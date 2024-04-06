@@ -1,24 +1,39 @@
 import React from 'react';
 import Header from '../components/header';
+import Footer from '../components/footer';
 import Link from 'next/link';
 import WalletBalance from '../components/WalletBalance';
+import "./globals.css";
 
- const HomePage: React.FC = () => {
+
+const HomePage: React.FC = () => {
 
   return (
-    <div className="container mx-auto px-4">
+
+    <div className = "container mx-auto px-4">
       <Header />
-
-      {/* Rest of your page content goes here */}
       <main>
-        <h1>My Wallet</h1>
-        <WalletBalance />
-        <Link href="/about">
-          <button>Click here to visit About Page</button>
+      <div className = 'md:flex justify-around mt-20'>
+        <div className = "container-sm text-justify border-2 border-gray-300 rounded-lg p-4 px-10">
+          <h1 className = "walletTitle">My Wallet</h1>
+          <WalletBalance />
+          <Link href = "/reload">
+            <button className = "reload-button">Reload +</button>
+          </Link>
+        </div>
+      </div>
+      <div className ="button-container">
+        <Link href = "/qr">
+          <button className = "button">Scan QR</button>
         </Link>
-
+        <Link href = "/split">
+          <button className = "button">Split Bill</button>
+        </Link>
+      </div>
       </main>
+      <Footer /> 
     </div>
+
   );
 };
 
