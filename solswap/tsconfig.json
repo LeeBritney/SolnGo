@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/header.js", "src/app/page.tsx", "src/components/WalletBalance.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/header.js", "src/app/page.tsx", "src/components/WalletBalance.tsx"],
   "exclude": ["node_modules"]
 }
