@@ -1,20 +1,20 @@
 # Steps to operate Sol&Go Website:
 
-1. Run the terminal and make sure you have yarn installed. If not, run:
+1. Firstly, make sure you are in the correct file directory. The correct file directory should end with:
+```
+  ..\solswap\solswap>
+```
+ In case you are in the wrong file directory, run this command:
+```
+  cd solswap
+```
+2. Run the terminal and make sure you have yarn installed. If not, run:
 ```
    npm install --global yarn
 ```
  and then run:
 ```
   yarn install
-```
-2. Next, make sure you are in the correct file directory. The correct file directory should end with:
-```
-  ..\solswap>
-```
- In case you are in the wrong file directory, run this command:
-```
-  cd solswap
 ```
 3. The next step is to run a local server to host the webpage. To do so, run:
 ```
