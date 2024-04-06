@@ -10,7 +10,7 @@
 ```
 2. Next, make sure you are in the correct file directory. The correct file directory should end with:
 ```
-  ..\solswap>
+  ..\solswap\solswap>
 ```
  In case you are in the wrong file directory, run this command:
 ```
