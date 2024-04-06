@@ -1,0 +1,66 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This will center the content vertically */
+  }
+  
+  .container {
+    margin: 20px; /* Add margin to create space around the container */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Add margin bottom to create space between form groups */
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px; /* Add margin top to create space below error messages */
+  }
+  
+  button[type="submit"] {
+    margin-top: 10px; /* Add margin top to create space between button and form inputs */
+    border: 2px solid white; /* Add white border */
+    border-radius: 5px; /* Add border radius */
+    color: white; /* Set text color to white */
+    background-color: transparent; /* Set background color to transparent */
+    padding: 10px 20px; /* Add padding for better appearance */
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+  
+h2 {
+    margin-bottom: 20px; /* Add margin bottom to create space between heading and form */
+    font-weight: bold;
+    font-size: 50px;
+} 
+
+input[type="text"],
+input[type="password"] {
+    color: black; /* Set text color to black */
+    border-radius: 5px;
+}
+
+select {
+    color: black; /* Set text color to black */
+    border-radius: 5px;
+}
+
+option {
+    color: black; /* Set text color of options to black */
+}
+
+.right-image {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 25%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Add any additional styling as needed */
+  }
+  
