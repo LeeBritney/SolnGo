@@ -1,6 +1,6 @@
 # Steps to operate Sol&Go Website:
 
-1. Next, make sure you are in the correct file directory. The correct file directory should end with:
+1. Firstly, make sure you are in the correct file directory. The correct file directory should end with:
 ```
   ..\solswap\solswap>
 ```
