@@ -46,7 +46,16 @@ const PaymentPage: React.FC = () => {
                 <div className="payment-content">
                   <div className="payment-body">
                     <div className="payment-plan">
-                      <a href="#" className="payment-plan-change">Change</a>
+                    <button>
+                      SOLANA
+                      <span className="SOLANA">{'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'}RM 856</span>
+                    </button>
+                    </div>
+                    <div className="payment-plan">
+                    <button>
+                      SOL
+                      <span className="SOLANA">{'\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'} + 1.44% {'\u00A0'}</span>
+                    </button>
                     </div>
                   </div>
                 </div>
@@ -90,7 +99,11 @@ const PaymentPage: React.FC = () => {
                       <label htmlFor="cvv" className="payment-form-label payment-form-label-required">CVV</label>
                     </div>
                   </div>
-                  <button type="submit" className="payment-form-submit-button"><i className="ri-wallet-line"></i> Pay</button>
+                  <div className="payment-form-container">
+                    <button>
+                      <i className="ri-wallet-line"></i> Pay
+                    </button>
+                    </div>
                 </form>
               </div>
             </div>
